@@ -1,0 +1,8 @@
+{
+    "host": "168.63.213.44",
+    "port": "3306",
+    "user": "stockcn",
+    "passwd": "------",
+    "db": "stockcn"
+
+}

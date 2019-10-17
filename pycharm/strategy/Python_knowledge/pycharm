@@ -1,0 +1,47 @@
+pycharm使用方式
+    1在pycharm下配置解释器
+        1 当前项目名－project interpreter(add local)
+    2在pycharm下创建python文件，python模块
+        1 File－New－Python File
+        2 File－New－Python Package
+    3使用Pycharm安装Python第三方模块
+        1 Project当前项目名－Project interpreter－右侧绿色小加号
+    4Pycharm基本设置，
+        1 设置菜单字体大小：Appearance & Behaviour－Appearance
+        2 设置Console&Terminal字体大小：Editor－Color & Fonts－Console Font
+        3 不使用tab、tab＝4空格，Editor－code style－Python
+        4 字体、字体颜色：Edit－Colors & Fonts－python
+        5 关闭自动更新：Appearance & Behaviour－System Settings－updates
+        6 脚本头设置：Edit－File and Code Templates－Python Script
+        7 显示行号：Edit－General－Appearance－show line numbers
+        8 右侧竖线是PEP8的代码规范，提示一行不要超过120个字符
+        9 导出、导入你自定义的配置：File－Export Settings－Import Settings
+    5常用快捷键：
+        常用查询及配置：keymap
+        1 Ctrl＋D：复制当前行
+        2 Ctrl＋E：删除当前行
+        3 Shift＋Enter：快速换行
+        4 Ctrl＋／：快速注释（选中多行后可以批量注释）
+        5 Tab：缩紧当前行（选中多行后可以批量批量缩进）
+        6 Shift＋Tab：取消缩进（选中多行后可以批量取消缩进）
+        7 Ctrl＋F：查找
+        8 Ctrl＋H：替换
+        设置快捷键：例如设置文本大小
+    6Pycharm安装插件,例如Markdown support、数据库支持插件等
+        1 Plugins－Browse repositories（下方三个按钮中间那个）－搜索'markdown support'－install
+        2 右上角View有三个选项可选，一般我们都用中间那个左侧编写，右侧实时预览
+    7Git 配置
+    8常用操作指南
+        1 复制文件路径：左侧文件列表右键选中的文件－copy path
+        2 在文件管理器中打开：右键选中的文件－往下找到show in explorer／finder
+        3 快速定位：Ctr（Command）＋某些内建模块之后，点击在源文件中展开
+        4 查看结构：IDE左侧边栏Structure查看当前项目的结构
+        5 tab批量换space：Eidt－Convert Indents－to space／tab
+        6 TODO的使用：要纪录的事情例如 TODO:BABBABB
+        7 Debug设置断点的使用
+        8 Tab页上右键－Move Right（Down），把当前Tab页移到窗口右边（下边），方便对比
+        9 文件中右键－local history能够查看文件修改前后的对比
+        10 IDE右下角能看到一些有用的信息，光标当前在第几行的第几个字符，当前回车换行、当前编码类型、当前Git分支
+        11 IDE右侧边栏－Database
+    9Live Templates（善用live templates提高开发效率）
+        1 setting－editor－live templates

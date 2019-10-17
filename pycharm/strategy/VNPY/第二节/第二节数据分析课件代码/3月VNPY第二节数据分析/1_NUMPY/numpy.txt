@@ -1,0 +1,54 @@
+####numpy数据结构####
+v = [0.5, 0.75, 1.0, 1.5, 2.0] 
+m = [v, v, v]  # matrix of numbers
+m
+
+m[1]
+
+m[1][0]
+
+v1 = [0.5, 1.5]
+v2 = [1, 2]
+m = [v1, v2]
+c = [m, m]  # cube of numbers
+c
+
+c[1][1][0]
+
+v = [0.5, 0.75, 1.0, 1.5, 2.0]
+m = [v, v, v]
+m
+
+v[0] = 'Python'
+m
+
+from copy import deepcopy
+v = [0.5, 0.75, 1.0, 1.5, 2.0]
+m = 3 * [deepcopy(v), ]
+m
+
+v[0] = 'Python'
+m
+
+import numpy as np
+
+a = np.array([0, 0.5, 1.0, 1.5, 2.0])
+type(a)
+
+a[:2]
+ 
+a.sum()
+a.std()
+a.cumsum()
+a * 2
+a ** 2
+np.sqrt(a)
+
+b = np.array([a, a * 2])
+b
+b[0]
+b[0, 2]  # third element of first row
+
+b.sum()
+b.sum(axis=0)
+b.sum(axis=1)

@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+
+import numpy as np
+import pandas as pd
+from pandas import Series, DataFrame
+
+
+df = pd.DataFrame([10,20,30,40],columns=['number'],index = ['a','b','c','d'])
+
+df['floats'] = (1.5,2.5,3.5,4.5)
+
+
+df.append(pd.DataFrame({'number':100,'floats':5.7},index=['z']))
+
+df['squares'] = (1,4,9,16)
+

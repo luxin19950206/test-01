@@ -1,0 +1,52 @@
+#MA
+
+import pandas as pd
+import tushare as ts
+import talib as ta
+
+#从tushare获取数据
+sh = ts.get_hist_data('sh')
+sh = sh.sort_index()
+#print sh['close']
+#使用TALIB计算20日均线
+ma = ta.MA(sh['close'].values,20)
+sh.loc[:,'tama'] = ma
+
+sh[['close','tama']].plot(figsize = (15,5),grid = True)
+
+
+____________________________________________________________
+#bollinger
+
+import numpy as np
+import pandas as pd
+import tushare as ts
+import talib as ta
+
+
+sh = ts.get_hist_data('sh')
+sh = sh.sort_index()
+close = sh[['close','volume']]
+
+#函数用的price必须为narray
+upper,middle,lower = ta.BBANDS(
+                                sh['close'].values,
+                                timeperiod=20,
+                                nbdevup = 2,
+                                nbdevdn = 2,
+                                matype = 0
+                               )
+
+
+close.loc[:, 'upper'] = upper
+close.loc[:,'middle']=middle
+close.loc[:,'lower']=lower
+
+
+
+close[['close','middle','upper','lower']].plot(figsize=(15,8),grid = True)
+
+---------------------------------------------------------------------
+
+
+
